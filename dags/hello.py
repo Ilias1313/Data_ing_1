@@ -3,9 +3,9 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
 
 default_args = {
-    'owner': 'datamasterylab',
-    'start_date': datetime(year:2024, month:11, day:25)
-    'catchup':False
+    'owner': 'datamasterylab.com',
+    'start_date': datetime(2024, 11, 25),
+    'catchup': False
     }
 
 dag = DAG(
