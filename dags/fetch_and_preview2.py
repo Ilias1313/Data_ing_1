@@ -33,7 +33,7 @@ def preview_data(**kwargs):
     df_sorted = df.sort_values(by='Price', ascending=False)
 
     # Afficher les résultats
-    print(df_sorted.head(20))  # Afficher les 20 premiers éléments triés
+    print(df_sorted.head(20))  # Afficher les 20 premiers éléments triés par prix décroissant
 
 default_args = {
     'owner': 'datamasterylab.com',
@@ -42,7 +42,7 @@ default_args = {
 }
 
 dag = DAG(
-    'fetch_and_preview2',
+    'fetch_and_preview',
     default_args=default_args,
     schedule_interval=timedelta(days=1)
 )
